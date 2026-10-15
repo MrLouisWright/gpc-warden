@@ -1,5 +1,7 @@
 # gpc-warden
 
+[![npm version](https://img.shields.io/npm/v/gpc-warden.svg)](https://www.npmjs.com/package/gpc-warden) [![CI](https://github.com/MrLouisWright/gpc-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/gpc-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/gpc-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Check that your built site honours Global Privacy Control: it reads the signal and suppresses sale/share trackers when it is on.
 
 Global Privacy Control (`Sec-GPC: 1` and `navigator.globalPrivacyControl`) is a legally binding opt-out of sale and sharing under the CCPA/CPRA and in Colorado, Connecticut and other US states, and California has fined companies for ignoring it. Honouring it means two things: some code has to read the signal, and advertising tags must load in a way that lets that code stop them. `gpc-warden` checks both in your built site, plus the `/.well-known/gpc.json` declaration and your privacy policy, and reports each gap with a **concrete fix**.
