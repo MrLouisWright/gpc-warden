@@ -1,6 +1,6 @@
 {
   "name": "gpc-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check your built site honours Global Privacy Control: code reading navigator.globalPrivacyControl / Sec-GPC, sale/share advertising trackers that load unconditionally, /.well-known/gpc.json validity and policy disclosure. CCPA/CPRA, Colorado, Connecticut. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
