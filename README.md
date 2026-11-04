@@ -64,7 +64,7 @@ MEDIUM   .well-known/gpc.json /.well-known/gpc.json: "gpc" must be true or false
 ## Options
 
 ```text
-gpc-warden 1.0.0 — check your built site honours Global Privacy Control
+gpc-warden 1.0.1 — check your built site honours Global Privacy Control
 
 Usage: gpc-warden [site-dir] [options]
 
@@ -161,11 +161,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev gpc-warden
+```
+
 ```js
 import { check, validateGpcJson } from "gpc-warden";
 const report = check("dist");
 validateGpcJson(JSON.stringify({ gpc: true, lastUpdate: "2026-10-01" })); // null
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("gpc-warden")` from CommonJS.
 
 Types are included.
 
